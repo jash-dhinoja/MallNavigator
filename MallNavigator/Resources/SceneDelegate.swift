@@ -2,21 +2,58 @@
 //  SceneDelegate.swift
 //  MallNavigator
 //
-//  Created by pro on 20/03/2021.
+//  Created by Jash Dhinoja on 20/03/2021.
 //
 
 import UIKit
+import FirebaseAuth
+import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
     var window: UIWindow?
 
 
+    func changeRootViewController(vc: UIViewController){
+        guard let window = window  else { return }
+        
+        window.rootViewController = vc
+        
+        UIView.transition(with: window,
+                          duration: 1.0,
+                              options: [.curveEaseInOut],
+                              animations: nil,
+                              completion: nil)
+    }
+    
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
         // Use this method to optionally configure and attach the UIWindow `window` to the provided UIWindowScene `scene`.
         // If using a storyboard, the `window` property will automatically be initialized and attached to the scene.
         // This delegate does not imply the connecting scene or session are new (see `application:configurationForConnectingSceneSession` instead).
-        guard let _ = (scene as? UIWindowScene) else { return }
+        do{
+            try Auth.auth().signOut()
+        }catch let error as NSError{
+            print("Sign Out Error:- \(error.localizedDescription)")
+        }
+        Auth.auth().addStateDidChangeListener { (auth, user) in
+            if let user = user{
+                CurrentUser.shared = CurrentUser(user: user)
+                let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
+//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let storyboard = UIStoryboard(name: "User", bundle: nil)
+                let tabController = storyboard.instantiateViewController(identifier: "mainTabVC") as! UITabBarController
+                sceneDelegate?.changeRootViewController(vc: tabController)
+                
+                let tabBar = tabController.tabBar
+                
+                tabBar.layer.masksToBounds = true
+                tabBar.isTranslucent = true
+                tabBar.barStyle = .default
+                tabBar.layer.cornerRadius = 20
+                tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+            }
+        }
+        
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
