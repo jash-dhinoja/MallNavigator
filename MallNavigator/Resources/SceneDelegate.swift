@@ -10,10 +10,10 @@ import FirebaseAuth
 import Firebase
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
-
+    
     var window: UIWindow?
-
-
+    
+    
     func changeRootViewController(vc: UIViewController){
         guard let window = window  else { return }
         
@@ -21,9 +21,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         UIView.transition(with: window,
                           duration: 1.0,
-                              options: [.curveEaseInOut],
-                              animations: nil,
-                              completion: nil)
+                          options: [.curveEaseInOut],
+                          animations: nil,
+                          completion: nil)
     }
     
     func scene(_ scene: UIScene, willConnectTo session: UISceneSession, options connectionOptions: UIScene.ConnectionOptions) {
@@ -39,8 +39,15 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             if let user = user{
                 CurrentUser.shared = CurrentUser(user: user)
                 let sceneDelegate = UIApplication.shared.connectedScenes.first?.delegate as? SceneDelegate
-//                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                
+                #if ADMIN
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                #elseif SHOPOWNER
+                let storyboard = UIStoryboard(name: "ShopOwner", bundle: nil)
+                #elseif USER
                 let storyboard = UIStoryboard(name: "User", bundle: nil)
+                #endif
+                
                 let tabController = storyboard.instantiateViewController(identifier: "mainTabVC") as! UITabBarController
                 sceneDelegate?.changeRootViewController(vc: tabController)
                 
@@ -55,35 +62,35 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         }
         
     }
-
+    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
         // Release any resources associated with this scene that can be re-created the next time the scene connects.
         // The scene may re-connect later, as its session was not necessarily discarded (see `application:didDiscardSceneSessions` instead).
     }
-
+    
     func sceneDidBecomeActive(_ scene: UIScene) {
         // Called when the scene has moved from an inactive state to an active state.
         // Use this method to restart any tasks that were paused (or not yet started) when the scene was inactive.
     }
-
+    
     func sceneWillResignActive(_ scene: UIScene) {
         // Called when the scene will move from an active state to an inactive state.
         // This may occur due to temporary interruptions (ex. an incoming phone call).
     }
-
+    
     func sceneWillEnterForeground(_ scene: UIScene) {
         // Called as the scene transitions from the background to the foreground.
         // Use this method to undo the changes made on entering the background.
     }
-
+    
     func sceneDidEnterBackground(_ scene: UIScene) {
         // Called as the scene transitions from the foreground to the background.
         // Use this method to save data, release shared resources, and store enough scene-specific state information
         // to restore the scene back to its current state.
     }
-
-
+    
+    
 }
 

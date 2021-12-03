@@ -52,8 +52,15 @@ class LoginViewController: UIViewController {
                     if (success) {
                         message = "User was sucessfully created."
                     } else {
-                        message = "There was an error."
+                        if let username = self.usernameTextField.text, let password = self.usernameTextField.text{
+                            if username.isEmpty || password.isEmpty{
+                                message = "Please fill up the username/password textfields"
+                            }else{
+                                message = "There was an error."
+                            }
+                        }
                     }
+
                     let alertController = UIAlertController(title: nil, message: message, preferredStyle: .alert)
                     alertController.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
                     self.present(alertController, animated: true)
