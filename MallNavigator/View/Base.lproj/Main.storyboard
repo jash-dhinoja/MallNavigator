@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +13,7 @@
         <!--Login View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController restorationIdentifier="loginVC" storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="LoginViewController" customModule="MallNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="loginVC" storyboardIdentifier="loginVC" id="BYZ-38-t0r" customClass="LoginViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -132,7 +133,7 @@ your account</string>
         <!--Event Category View Controller-->
         <scene sceneID="Pzb-fL-W0P">
             <objects>
-                <viewController id="khG-vX-dbU" customClass="EventCategoryViewController" customModule="MallNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="khG-vX-dbU" customClass="EventCategoryViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cH8-jW-eAk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -141,8 +142,8 @@ your account</string>
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="196" id="g9g-0S-c2V" customClass="CategoryTableViewCell" customModule="MallNavigator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="196"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="196" id="g9g-0S-c2V" customClass="CategoryTableViewCell" customModule="MallNavigator_Admin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="196"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="g9g-0S-c2V" id="To0-yE-3FL">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
@@ -211,7 +212,7 @@ your account</string>
         <!--Hello-->
         <scene sceneID="Xkt-Lq-iJK">
             <objects>
-                <viewController restorationIdentifier="eventListVc" storyboardIdentifier="eventListVc" title="Hello" id="oUX-wt-Fmc" customClass="EventListViewController" customModule="MallNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="eventListVc" storyboardIdentifier="eventListVc" title="Hello" id="oUX-wt-Fmc" customClass="EventListViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DNq-Xb-akT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -220,8 +221,8 @@ your account</string>
                                 <rect key="frame" x="0.0" y="140" width="414" height="707"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" rowHeight="96" id="Fq9-RS-N1y" customClass="EventTableViewCell" customModule="MallNavigator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="96"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="eventCell" rowHeight="96" id="Fq9-RS-N1y" customClass="EventTableViewCell" customModule="MallNavigator_Admin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fq9-RS-N1y" id="JG6-VR-Ow9">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="96"/>
@@ -277,7 +278,7 @@ your account</string>
         <!--Event Detail Table View Controller-->
         <scene sceneID="Cj0-1G-JDm">
             <objects>
-                <tableViewController restorationIdentifier="eventDetailVC" storyboardIdentifier="eventDetailVC" id="y4M-dt-VY9" customClass="EventDetailTableViewController" customModule="MallNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="eventDetailVC" storyboardIdentifier="eventDetailVC" id="y4M-dt-VY9" customClass="EventDetailTableViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ru5-Xb-XEE">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -286,7 +287,7 @@ your account</string>
                             <tableViewSection headerTitle="Event Info" id="qfo-0A-jme">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="kUh-e9-CDM">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="kUh-e9-CDM" id="bxR-LT-CMJ">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -309,7 +310,7 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="224" id="Fs2-g4-oDd">
-                                        <rect key="frame" x="0.0" y="142.5" width="414" height="224"/>
+                                        <rect key="frame" x="0.0" y="136.5" width="414" height="224"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fs2-g4-oDd" id="E8q-3E-fhN">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="224"/>
@@ -351,7 +352,7 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="181" id="aUH-Oh-cDd">
-                                        <rect key="frame" x="0.0" y="366.5" width="414" height="181"/>
+                                        <rect key="frame" x="0.0" y="360.5" width="414" height="181"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="aUH-Oh-cDd" id="xNR-JN-5se">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="181"/>
@@ -381,7 +382,7 @@ your account</string>
                             <tableViewSection headerTitle="Event Holder Info" id="Git-PQ-alZ">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="2mM-9q-j9f">
-                                        <rect key="frame" x="0.0" y="603.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="591.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="2mM-9q-j9f" id="t78-km-5E0">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -404,7 +405,7 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="pOH-va-sFM">
-                                        <rect key="frame" x="0.0" y="690.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="678.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pOH-va-sFM" id="Ep0-ax-QF7">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -427,7 +428,7 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="40g-Wh-9Ef">
-                                        <rect key="frame" x="0.0" y="777.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="765.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="40g-Wh-9Ef" id="s6w-9M-abs">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -474,7 +475,7 @@ your account</string>
         <!--Shop List-->
         <scene sceneID="FRL-rU-arY">
             <objects>
-                <viewController restorationIdentifier="shopList" storyboardIdentifier="shopList" id="sc8-qO-UEv" customClass="ShopListViewController" customModule="MallNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="shopList" storyboardIdentifier="shopList" id="sc8-qO-UEv" customClass="ShopListViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jUc-oP-2t8">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -483,8 +484,8 @@ your account</string>
                                 <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopCell" rowHeight="139" id="gsW-to-yEt" customClass="StoreTableViewCell" customModule="MallNavigator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="139"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopCell" rowHeight="139" id="gsW-to-yEt" customClass="StoreTableViewCell" customModule="MallNavigator_Admin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="gsW-to-yEt" id="D2G-ug-jdm">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="139"/>
@@ -558,7 +559,7 @@ your account</string>
         <!--Shop Detail View Controller-->
         <scene sceneID="CPn-sh-my2">
             <objects>
-                <tableViewController restorationIdentifier="shopDetailVC" storyboardIdentifier="shopDetailVC" id="dIf-N6-v02" customClass="ShopDetailViewController" customModule="MallNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController restorationIdentifier="shopDetailVC" storyboardIdentifier="shopDetailVC" id="dIf-N6-v02" customClass="ShopDetailViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="chK-SY-rP7">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -567,7 +568,7 @@ your account</string>
                             <tableViewSection headerTitle="Shop Info" id="4ME-Db-uaW">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="eIP-pT-Ddy">
-                                        <rect key="frame" x="0.0" y="55.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="49.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="eIP-pT-Ddy" id="z1P-pc-nQA">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -590,7 +591,7 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="iKw-5z-vWq">
-                                        <rect key="frame" x="0.0" y="142.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="136.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iKw-5z-vWq" id="Hag-Sc-w9J">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -626,7 +627,7 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="181" id="tln-6q-HUd">
-                                        <rect key="frame" x="0.0" y="229.5" width="414" height="181"/>
+                                        <rect key="frame" x="0.0" y="223.5" width="414" height="181"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tln-6q-HUd" id="bWq-Xr-ka7">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="181"/>
@@ -656,7 +657,7 @@ your account</string>
                             <tableViewSection headerTitle="Owner Info" id="Sgj-0N-b1U">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="Vrh-Rw-Di8">
-                                        <rect key="frame" x="0.0" y="466.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="454.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Vrh-Rw-Di8" id="apA-jK-HoC">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -679,7 +680,7 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="dwe-oI-Ccu">
-                                        <rect key="frame" x="0.0" y="553.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="541.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dwe-oI-Ccu" id="4ja-Sq-8nO">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -702,7 +703,7 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="3Ay-Xf-qZl">
-                                        <rect key="frame" x="0.0" y="640.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="628.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Ay-Xf-qZl" id="52u-zv-sLy">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -725,7 +726,7 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="87" id="zhs-ZQ-hH2">
-                                        <rect key="frame" x="0.0" y="727.5" width="414" height="87"/>
+                                        <rect key="frame" x="0.0" y="715.5" width="414" height="87"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zhs-ZQ-hH2" id="YbU-SM-nao">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="87"/>
@@ -811,7 +812,7 @@ your account</string>
         <!--Mall Details-->
         <scene sceneID="kr1-JW-SP2">
             <objects>
-                <tableViewController id="EBo-Jp-2O3" customClass="MallDetailViewController" customModule="MallNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="EBo-Jp-2O3" customClass="MallDetailViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="35t-xK-vDq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -902,10 +903,10 @@ your account</string>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="Lju-Lu-TLg">
-                                        <rect key="frame" x="0.0" y="262" width="414" height="44"/>
+                                        <rect key="frame" x="0.0" y="262" width="414" height="43.5"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Lju-Lu-TLg" id="qkV-2w-jkr">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y4r-Dw-Lfs">
@@ -945,7 +946,7 @@ your account</string>
         <!--Shop Category Table View Controller-->
         <scene sceneID="BBd-UL-HhV">
             <objects>
-                <viewController id="Hdi-Bx-VCE" customClass="ShopCategoryTableViewController" customModule="MallNavigator" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Hdi-Bx-VCE" customClass="ShopCategoryTableViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="dFO-Jo-yhw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -954,8 +955,8 @@ your account</string>
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="196" id="Zjd-8P-WhP" customClass="CategoryTableViewCell" customModule="MallNavigator" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="28" width="414" height="196"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="196" id="Zjd-8P-WhP" customClass="CategoryTableViewCell" customModule="MallNavigator_Admin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="196"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Zjd-8P-WhP" id="EE2-2d-7g3">
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>

@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		1501CBCE2612365E00A8E67A /* EventDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1501CBCD2612365E00A8E67A /* EventDetailTableViewController.swift */; };
 		151793EE260947F000A8DB18 /* TestCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 151793ED260947F000A8DB18 /* TestCollectionViewCell.swift */; };
+		1528C3922762A252000C9046 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15883750262CDFAF00FE2E73 /* User.storyboard */; };
+		1528C3932762A252000C9046 /* User.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 15883750262CDFAF00FE2E73 /* User.storyboard */; };
+		1528C3942762A259000C9046 /* ShopOwner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158E9EE626292F4900982116 /* ShopOwner.storyboard */; };
+		1528C3952762A259000C9046 /* ShopOwner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158E9EE626292F4900982116 /* ShopOwner.storyboard */; };
+		1528C3962762A27B000C9046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1563B33E2606A92500D0FB24 /* Main.storyboard */; };
+		1528C3972762A27B000C9046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1563B33E2606A92500D0FB24 /* Main.storyboard */; };
 		1532476D2618F0B300B95E5A /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1532476C2618F0B300B95E5A /* StoreTableViewCell.swift */; };
 		153247702618F13600B95E5A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1532476F2618F13600B95E5A /* Store.swift */; };
 		153247732618F19F00B95E5A /* FloorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153247722618F19F00B95E5A /* FloorEnum.swift */; };
@@ -715,7 +721,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1528C3942762A259000C9046 /* ShopOwner.storyboard in Resources */,
 				1563B3452606A92600D0FB24 /* LaunchScreen.storyboard in Resources */,
+				1528C3922762A252000C9046 /* User.storyboard in Resources */,
 				15C90A6C2606E6E400362E7D /* GoogleService-Info.plist in Resources */,
 				1563B3422606A92600D0FB24 /* Assets.xcassets in Resources */,
 				1563B3402606A92500D0FB24 /* Main.storyboard in Resources */,
@@ -727,7 +735,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				159D3F1F274854F500D0EC58 /* LaunchScreen.storyboard in Resources */,
+				1528C3932762A252000C9046 /* User.storyboard in Resources */,
 				159D3F20274854F500D0EC58 /* ShopOwner.storyboard in Resources */,
+				1528C3962762A27B000C9046 /* Main.storyboard in Resources */,
 				159D3F21274854F500D0EC58 /* GoogleService-Info.plist in Resources */,
 				159D3F22274854F500D0EC58 /* Assets.xcassets in Resources */,
 			);
@@ -740,6 +750,8 @@
 				159D3F64274854FB00D0EC58 /* LaunchScreen.storyboard in Resources */,
 				159D3F66274854FB00D0EC58 /* GoogleService-Info.plist in Resources */,
 				159D3F67274854FB00D0EC58 /* Assets.xcassets in Resources */,
+				1528C3972762A27B000C9046 /* Main.storyboard in Resources */,
+				1528C3952762A259000C9046 /* ShopOwner.storyboard in Resources */,
 				159D3F69274854FB00D0EC58 /* User.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1240,6 +1252,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ADMIN";
 				PRODUCT_BUNDLE_IDENTIFIER = mallNavigator.MallNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1260,6 +1273,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D ADMIN";
 				PRODUCT_BUNDLE_IDENTIFIER = mallNavigator.MallNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1280,6 +1294,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D SHOPOWNER";
 				PRODUCT_BUNDLE_IDENTIFIER = mallNavigator.MallNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1300,6 +1315,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D SHOPOWNER";
 				PRODUCT_BUNDLE_IDENTIFIER = mallNavigator.MallNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1320,6 +1336,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D USER";
 				PRODUCT_BUNDLE_IDENTIFIER = mallNavigator.MallNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1340,6 +1357,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = "$(inherited) -D COCOAPODS -D USER";
 				PRODUCT_BUNDLE_IDENTIFIER = mallNavigator.MallNavigator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

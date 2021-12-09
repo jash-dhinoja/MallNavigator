@@ -44,7 +44,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 #elseif SHOPOWNER
                 let storyboard = UIStoryboard(name: "ShopOwner", bundle: nil)
-                #elseif USER
+                #else
                 let storyboard = UIStoryboard(name: "User", bundle: nil)
                 #endif
                 
