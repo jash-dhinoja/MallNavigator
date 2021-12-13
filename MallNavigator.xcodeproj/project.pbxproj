@@ -15,6 +15,12 @@
 		1528C3952762A259000C9046 /* ShopOwner.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 158E9EE626292F4900982116 /* ShopOwner.storyboard */; };
 		1528C3962762A27B000C9046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1563B33E2606A92500D0FB24 /* Main.storyboard */; };
 		1528C3972762A27B000C9046 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1563B33E2606A92500D0FB24 /* Main.storyboard */; };
+		1528C3992762AEC0000C9046 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528C3982762AEC0000C9046 /* TextField.swift */; };
+		1528C39A2762AEC0000C9046 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528C3982762AEC0000C9046 /* TextField.swift */; };
+		1528C39B2762AEC0000C9046 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528C3982762AEC0000C9046 /* TextField.swift */; };
+		1528C39D2762B253000C9046 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528C39C2762B253000C9046 /* Theme.swift */; };
+		1528C39E2762B253000C9046 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528C39C2762B253000C9046 /* Theme.swift */; };
+		1528C39F2762B253000C9046 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1528C39C2762B253000C9046 /* Theme.swift */; };
 		1532476D2618F0B300B95E5A /* StoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1532476C2618F0B300B95E5A /* StoreTableViewCell.swift */; };
 		153247702618F13600B95E5A /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1532476F2618F13600B95E5A /* Store.swift */; };
 		153247732618F19F00B95E5A /* FloorEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 153247722618F19F00B95E5A /* FloorEnum.swift */; };
@@ -183,6 +189,8 @@
 /* Begin PBXFileReference section */
 		1501CBCD2612365E00A8E67A /* EventDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailTableViewController.swift; sourceTree = "<group>"; };
 		151793ED260947F000A8DB18 /* TestCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestCollectionViewCell.swift; sourceTree = "<group>"; };
+		1528C3982762AEC0000C9046 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
+		1528C39C2762B253000C9046 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		1532476C2618F0B300B95E5A /* StoreTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreTableViewCell.swift; sourceTree = "<group>"; };
 		1532476F2618F13600B95E5A /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		153247722618F19F00B95E5A /* FloorEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FloorEnum.swift; sourceTree = "<group>"; };
@@ -191,7 +199,7 @@
 		1563B3352606A92500D0FB24 /* MallNavigator-Admin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MallNavigator-Admin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1563B3382606A92500D0FB24 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1563B33A2606A92500D0FB24 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1563B33C2606A92500D0FB24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		1563B33C2606A92500D0FB24 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = LoginViewController.swift; path = "../New Group/LoginViewController.swift"; sourceTree = "<group>"; };
 		1563B33F2606A92500D0FB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1563B3412606A92600D0FB24 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1563B3442606A92600D0FB24 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -286,6 +294,14 @@
 			path = Events;
 			sourceTree = "<group>";
 		};
+		1528C3A02763EDD7000C9046 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				1563B33C2606A92500D0FB24 /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
 		1563B32C2606A92500D0FB24 = {
 			isa = PBXGroup;
 			children = (
@@ -357,7 +373,6 @@
 				15C90A0E262A7AF10079D720 /* Shop Owner */,
 				15C90A09262A72910079D720 /* User */,
 				158E9EE12628EC3600982116 /* Admin */,
-				1563B33C2606A92500D0FB24 /* LoginViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -383,9 +398,11 @@
 		1563B3522606A99E00D0FB24 /* UI Elements */ = {
 			isa = PBXGroup;
 			children = (
-				1582B12F260D892A00450CDC /* Extensions */,
+				1528C3982762AEC0000C9046 /* TextField.swift */,
 				1563B3542606A9E700D0FB24 /* Label.swift */,
 				158E9EE32628F5CE00982116 /* SnapCollectionViewFlowLayout.swift */,
+				1528C39C2762B253000C9046 /* Theme.swift */,
+				1582B12F260D892A00450CDC /* Extensions */,
 			);
 			path = "UI Elements";
 			sourceTree = "<group>";
@@ -494,6 +511,7 @@
 		158E9EE12628EC3600982116 /* Admin */ = {
 			isa = PBXGroup;
 			children = (
+				1528C3A02763EDD7000C9046 /* Login */,
 				1501CBCC2612362C00A8E67A /* Events */,
 				159BC86C261C468000EAC53C /* Shop */,
 				15A46E3A262253FF00BED3F3 /* Mall Details */,
@@ -940,6 +958,7 @@
 				1582B12D260D83DF00450CDC /* EventTableViewCell.swift in Sources */,
 				15C678512623772300EF1A19 /* StoreEnum.swift in Sources */,
 				15C90A11262B0B4E0079D720 /* ShopOwnerLoginViewController.swift in Sources */,
+				1528C39A2762AEC0000C9046 /* TextField.swift in Sources */,
 				1501CBCE2612365E00A8E67A /* EventDetailTableViewController.swift in Sources */,
 				15C90A21262BAD760079D720 /* OfferDetailViewController.swift in Sources */,
 				1582B12A260D425E00450CDC /* EventCategoryViewController.swift in Sources */,
@@ -950,6 +969,7 @@
 				159BC873261F364800EAC53C /* ShopDetailViewController.swift in Sources */,
 				1563B33D2606A92500D0FB24 /* LoginViewController.swift in Sources */,
 				15A46E452622990700BED3F3 /* Mall.swift in Sources */,
+				1528C39E2762B253000C9046 /* Theme.swift in Sources */,
 				15883776262EFA6200FE2E73 /* UserLoginViewController.swift in Sources */,
 				1582B13B260D95A000450CDC /* EventListViewController.swift in Sources */,
 				1582B131260D894200450CDC /* UIViewExtension.swift in Sources */,
@@ -997,6 +1017,7 @@
 				159D3EED274854F500D0EC58 /* EventTableViewCell.swift in Sources */,
 				159D3EEE274854F500D0EC58 /* StoreEnum.swift in Sources */,
 				159D3EEF274854F500D0EC58 /* ShopOwnerLoginViewController.swift in Sources */,
+				1528C3992762AEC0000C9046 /* TextField.swift in Sources */,
 				159D3EF0274854F500D0EC58 /* EventDetailTableViewController.swift in Sources */,
 				159D3EF1274854F500D0EC58 /* OfferDetailViewController.swift in Sources */,
 				159D3EF2274854F500D0EC58 /* EventCategoryViewController.swift in Sources */,
@@ -1007,6 +1028,7 @@
 				159D3EF7274854F500D0EC58 /* ShopDetailViewController.swift in Sources */,
 				159D3EF8274854F500D0EC58 /* LoginViewController.swift in Sources */,
 				159D3EF9274854F500D0EC58 /* Mall.swift in Sources */,
+				1528C39D2762B253000C9046 /* Theme.swift in Sources */,
 				159D3EFA274854F500D0EC58 /* UserLoginViewController.swift in Sources */,
 				159D3EFB274854F500D0EC58 /* EventListViewController.swift in Sources */,
 				159D3EFC274854F500D0EC58 /* UIViewExtension.swift in Sources */,
@@ -1054,6 +1076,7 @@
 				159D3F32274854FB00D0EC58 /* EventTableViewCell.swift in Sources */,
 				159D3F33274854FB00D0EC58 /* StoreEnum.swift in Sources */,
 				159D3F34274854FB00D0EC58 /* ShopOwnerLoginViewController.swift in Sources */,
+				1528C39B2762AEC0000C9046 /* TextField.swift in Sources */,
 				159D3F35274854FB00D0EC58 /* EventDetailTableViewController.swift in Sources */,
 				159D3F36274854FB00D0EC58 /* OfferDetailViewController.swift in Sources */,
 				159D3F37274854FB00D0EC58 /* EventCategoryViewController.swift in Sources */,
@@ -1064,6 +1087,7 @@
 				159D3F3C274854FB00D0EC58 /* ShopDetailViewController.swift in Sources */,
 				159D3F3D274854FB00D0EC58 /* LoginViewController.swift in Sources */,
 				159D3F3E274854FB00D0EC58 /* Mall.swift in Sources */,
+				1528C39F2762B253000C9046 /* Theme.swift in Sources */,
 				159D3F3F274854FB00D0EC58 /* UserLoginViewController.swift in Sources */,
 				159D3F40274854FB00D0EC58 /* EventListViewController.swift in Sources */,
 				159D3F41274854FB00D0EC58 /* UIViewExtension.swift in Sources */,

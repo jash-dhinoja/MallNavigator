@@ -59,6 +59,8 @@ class ShopDetailViewController: UITableViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(backButtonPressed))
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed))
         
+        tableView.allowsSelection = false
+        
         if let store = currentStore{
             shopNameTextField.text = store.name
             floorTextField.text = store.floor.description

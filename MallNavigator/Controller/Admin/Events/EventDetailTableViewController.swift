@@ -39,6 +39,8 @@ class EventDetailTableViewController: UITableViewController {
         navigationItem.leftBarButtonItem = UIBarButtonItem(barButtonSystemItem: .cancel, target: self, action: #selector(backButtonPressed))
         navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .done, target: self, action: #selector(doneButtonPressed))
         
+        tableView.allowsSelection = false
+        
         //Text Field
         eventNameTextField.layer.cornerRadius = 20
         eventHolderNameTextField.layer.cornerRadius = 20

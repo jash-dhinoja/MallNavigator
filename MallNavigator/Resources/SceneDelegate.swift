@@ -54,10 +54,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
                 let tabBar = tabController.tabBar
                 
                 tabBar.layer.masksToBounds = true
-                tabBar.isTranslucent = true
+//                tabBar.isTranslucent = true
                 tabBar.barStyle = .default
                 tabBar.layer.cornerRadius = 20
                 tabBar.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+                tabBar.backgroundColor = Theme.colorPallete.ghostWhite.color
+                tabBar.tintColor = Theme.colorPallete.indigoDye.color
             }
         }
         

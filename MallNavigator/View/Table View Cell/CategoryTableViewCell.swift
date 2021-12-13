@@ -17,11 +17,15 @@ class CategoryTableViewCell: UITableViewCell {
         super.awakeFromNib()
         
         categroryNameLabel.font = categroryNameLabel.font.withSize(CGFloat(20))
+        categroryNameLabel.textColor = Theme.colorPallete.ghostWhite.color
         numberOfShopsLabel.font = numberOfShopsLabel.font.withSize(CGFloat(40))
+        numberOfShopsLabel.textColor = Theme.colorPallete.ghostWhite.color
      
         selectionStyle = .none
         
         cellHolderView.applyShadow(true)
+        
+        cellHolderView.backgroundColor = Theme.colorPallete.indigoDye.color
     }
     
     func configCell(category: Category){
