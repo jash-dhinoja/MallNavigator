@@ -10,8 +10,6 @@
 
 Visiting a mall is considered to be a time consuming process, if in a time constraint malls are always avoided. This application is designed for the mall visitors that want to make those speedy purchases. The application provides information about stores in the mall and deals or offers that are currently going on in their respective stores. The application consists of 3 targets, the Mall Owner, Store Owners and the Mall Visitors.
 
-<p align="right">(<a href="#top">back to top</a>)</p>
-
 
 <!-- Admin Module -->
 # Admin
