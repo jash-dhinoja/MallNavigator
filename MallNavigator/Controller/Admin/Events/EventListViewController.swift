@@ -89,7 +89,7 @@ class EventListViewController: UIViewController {
                 return Event(eventName: "NotReal",
                              eventStartDate: Date(),
                              eventEndDate: Date(),
-                             eventCategory: Category.categoryList.first!,
+                             eventCategory: CategoryList.list.first!,
                              description: "",
                              holder: EventHolder(name: "NotOwner",
                                                  contactNo: "1234567890",

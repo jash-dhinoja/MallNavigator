@@ -10,7 +10,7 @@ import UIKit
 class ShopCategoryTableViewController: UIViewController {
     
     //MARK:- Properties
-    let categoryList = Category.categoryList
+    let categoryList = CategoryList.list
     
     //Table View
     @IBOutlet weak var shopCategoryTable: UITableView!
@@ -21,6 +21,8 @@ class ShopCategoryTableViewController: UIViewController {
         
         shopCategoryTable.delegate = self
         shopCategoryTable.dataSource = self
+        
+        shopCategoryTable.register(UINib(nibName: "CategoryCellView", bundle: nil), forCellReuseIdentifier: "categoryCell")
         
         configUI()
     }
@@ -42,6 +44,7 @@ extension ShopCategoryTableViewController: UITableViewDelegate,UITableViewDataSo
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") as! CategoryTableViewCell
+//        let cell = tableView.dequeueReusableCell(withIdentifier: "categoryCell") as! CategoryTableViewCell
         
         let currentCategory = categoryList[indexPath.row]
         

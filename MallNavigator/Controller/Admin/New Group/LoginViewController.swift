@@ -93,8 +93,8 @@ class LoginViewController: UIViewController {
 //MARK: TextField Delegate
 extension LoginViewController: UITextFieldDelegate{
     func textFieldDidBeginEditing(_ textField: UITextField) {
-        textField.layer.borderColor = Theme.colorPallete.beauBlue.color.cgColor
-        textField.rightView?.tintColor = Theme.colorPallete.beauBlue.color
+        textField.layer.borderColor = Theme.colorPallete.indigoDye.color.cgColor
+        textField.rightView?.tintColor = Theme.colorPallete.indigoDye.color
     }
     
     func textFieldDidEndEditing(_ textField: UITextField, reason: UITextField.DidEndEditingReason) {

@@ -12,12 +12,11 @@ class Label: UILabel {
     var insets = UIEdgeInsets.zero
     
     required init(){
-        
         super.init(frame: CGRect.zero)
         frame = CGRect(x: 0, y: 0, width: frame.width + Theme.textPaddingLeft, height: frame.height)
         insets = UIEdgeInsets(top: 0, left: Theme.textPaddingLeft, bottom: 0, right: 0)
         
-        textColor = UIColor.lightText
+        textColor = UIColor.darkText
         
     }
     

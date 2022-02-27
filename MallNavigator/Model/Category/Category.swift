@@ -13,12 +13,6 @@ struct Category {
     var numberOfShops: Int
     var mainImage: String
     
-    static var categoryList = [
-        Category(name: "Shop", numberOfShops: 20, mainImage: "photo1"),
-        Category(name: "Entertain", numberOfShops: 17, mainImage: "photo2"),
-        Category(name: "Dine", numberOfShops: 34, mainImage: "photo3")
-    ]
-    
     init(name: String, numberOfShops: Int, mainImage: String) {
         self.name = name
         self.numberOfShops = numberOfShops
@@ -44,4 +38,13 @@ struct Category {
         ]
     }
     
+}
+
+class CategoryList{
+ 
+    static var list = [
+        Category(name: "Shop", numberOfShops: 20, mainImage: "shop_banner"),
+        Category(name: "Entertain", numberOfShops: 17, mainImage: "entertainment_banner"),
+        Category(name: "Dine", numberOfShops: 34, mainImage: "dine_banner-1")
+    ]
 }

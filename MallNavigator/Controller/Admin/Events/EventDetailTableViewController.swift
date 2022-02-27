@@ -91,7 +91,7 @@ class EventDetailTableViewController: UITableViewController {
             var event = Event(eventName: name,
                               eventStartDate: eventFromDatePicker.date,
                               eventEndDate: eventToDatePicker.date,
-                              eventCategory: Category.categoryList.first!,
+                              eventCategory: CategoryList.list.first!,
                               description: desc,
                               holder: EventHolder(name: holderName,
                                                   contactNo: holderContactNo,

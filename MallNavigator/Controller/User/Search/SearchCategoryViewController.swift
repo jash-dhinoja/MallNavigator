@@ -11,7 +11,7 @@ class SearchCategoryViewController: UIViewController {
 
     //MARK:- Properties
     
-    let categoryList = Category.categoryList
+    let categoryList = CategoryList.list
     
     //Table View
     @IBOutlet weak var categoryTableView: UITableView!
@@ -21,7 +21,9 @@ class SearchCategoryViewController: UIViewController {
         super.viewDidLoad()
         
         categoryTableView.delegate = self
-        categoryTableView.dataSource = self
+        categoryTableView.dataSource  = self
+        
+        categoryTableView.register(UINib(nibName: "CategoryCellView", bundle: nil), forCellReuseIdentifier: "categoryCell")
         
         configUI()
     }

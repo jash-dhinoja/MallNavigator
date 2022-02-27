@@ -91,7 +91,6 @@ class ShopDetailViewController: UITableViewController {
     }
     //Done Button Handler
     @objc func doneButtonPressed(){
-        print("Done Button Pressed")
         
         guard let name = shopNameTextField.text,
               let owner = ownerNameTextField.text,

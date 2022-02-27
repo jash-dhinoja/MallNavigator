@@ -74,7 +74,7 @@ extension CartListViewController: UITableViewDelegate, UITableViewDataSource{
             
             alert.addAction(UIAlertAction(title: "Delete", style: .destructive, handler: { _ in
                 self.cart.remove(at: indexPath.row)
-                self.cartTableView.deleteRows(at: [indexPath], with: .automatic)
+                tableView.reloadData()
             }))
             alert.addAction(UIAlertAction(title: "Cancel", style: .cancel))
             

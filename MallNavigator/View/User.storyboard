@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="sX2-E6-6aA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="idt-Sh-bke">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--User Login View Controller-->
         <scene sceneID="6rA-rZ-buS">
             <objects>
-                <viewController restorationIdentifier="loginVC" storyboardIdentifier="loginVC" id="sX2-E6-6aA" customClass="UserLoginViewController" customModule="MallNavigator_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="loginVC" storyboardIdentifier="loginVC" id="sX2-E6-6aA" customClass="UserLoginViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5cu-du-Z9u">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -113,7 +114,7 @@ your account</string>
         <!--User Sign In View Controller-->
         <scene sceneID="wxC-ki-e02">
             <objects>
-                <viewController restorationIdentifier="signInVC" storyboardIdentifier="signInVC" id="YCa-Bm-i2O" customClass="UserSignInViewController" customModule="MallNavigator_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="signInVC" storyboardIdentifier="signInVC" id="YCa-Bm-i2O" customClass="UserSignInViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uEV-al-GCk">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -224,21 +225,102 @@ for an account</string>
             </objects>
             <point key="canvasLocation" x="-571.01449275362324" y="3397.7678571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Navigation Controller-->
+        <scene sceneID="gvC-EV-V6r">
+            <objects>
+                <navigationController id="idt-Sh-bke" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="MSo-kz-afS">
+                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="UXA-13-UkO" kind="relationship" relationship="rootViewController" id="DfY-GS-zyK"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="W0j-vF-W94" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1574" y="1996"/>
+        </scene>
+        <!--aa-->
         <scene sceneID="sj4-lK-70f">
             <objects>
-                <viewController id="UXA-13-UkO" sceneMemberID="viewController">
+                <viewController title="aa" id="UXA-13-UkO" customClass="DashboardViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wZV-mu-x8N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="YXU-J1-yUd">
+                                <rect key="frame" x="0.0" y="157" width="414" height="267"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="30" minimumInteritemSpacing="20" id="bmw-rP-I0r">
+                                    <size key="itemSize" width="311" height="267"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="dashboardEventCell" id="hrE-2i-OEE" customClass="DashboardEventCollectionViewCell" customModule="MallNavigator_Admin" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="311" height="267"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="DkM-x7-dph">
+                                            <rect key="frame" x="0.0" y="0.0" width="311" height="267"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KMS-nG-Enf">
+                                                    <rect key="frame" x="0.0" y="0.0" width="311" height="201"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="311" id="GjU-SS-2ow"/>
+                                                        <constraint firstAttribute="height" constant="201" id="khA-vY-o6Z"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wc4-Fs-NN8">
+                                                    <rect key="frame" x="111" y="209" width="89" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Offer date range" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jgd-V7-ohX">
+                                                    <rect key="frame" x="92.5" y="238" width="126" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KMS-nG-Enf" firstAttribute="top" secondItem="DkM-x7-dph" secondAttribute="top" id="0Nl-sR-g9b"/>
+                                                <constraint firstAttribute="trailing" secondItem="KMS-nG-Enf" secondAttribute="trailing" id="AEi-w7-m9v"/>
+                                                <constraint firstItem="jgd-V7-ohX" firstAttribute="top" secondItem="Wc4-Fs-NN8" secondAttribute="bottom" constant="8" id="AVZ-Mh-1cO"/>
+                                                <constraint firstItem="Wc4-Fs-NN8" firstAttribute="top" secondItem="KMS-nG-Enf" secondAttribute="bottom" constant="8" id="Jf1-eo-cnc"/>
+                                                <constraint firstItem="Wc4-Fs-NN8" firstAttribute="centerX" secondItem="DkM-x7-dph" secondAttribute="centerX" id="Jzi-Hf-xqf"/>
+                                                <constraint firstItem="KMS-nG-Enf" firstAttribute="leading" secondItem="DkM-x7-dph" secondAttribute="leading" id="pCs-Hd-d9I"/>
+                                                <constraint firstItem="jgd-V7-ohX" firstAttribute="centerX" secondItem="DkM-x7-dph" secondAttribute="centerX" id="quO-K8-n9G"/>
+                                            </constraints>
+                                        </collectionViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="eventDurationLabel" destination="jgd-V7-ohX" id="9Rv-XZ-odN"/>
+                                            <outlet property="eventImageView" destination="KMS-nG-Enf" id="Ngq-zP-8wa"/>
+                                            <outlet property="eventNameLabel" destination="Wc4-Fs-NN8" id="nex-L3-YjD"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="UXA-13-UkO" id="XYU-no-rdl"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="wqh-gz-auV"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </view>
-                    <navigationItem key="navigationItem" id="B8P-1b-iGH"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="B8P-1b-iGH"/>
+                    <connections>
+                        <outlet property="eventCollectionView" destination="YXU-J1-yUd" id="sDV-tf-uq2"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EFd-d5-dps" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2484" y="1996"/>
+            <point key="canvasLocation" x="2482.608695652174" y="1995.5357142857142"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="0oo-Kq-K0L">
@@ -258,25 +340,6 @@ for an account</string>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="edp-cA-k5N" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="425" y="2682"/>
-        </scene>
-        <!--Home-->
-        <scene sceneID="FEQ-P1-kDm">
-            <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="dmU-Cy-Ye3" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Home" image="house" catalog="system" selectedImage="house.fill" id="Lru-ai-k9z"/>
-                    <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="Npc-co-pu0">
-                        <rect key="frame" x="0.0" y="44" width="414" height="96"/>
-                        <autoresizingMask key="autoresizingMask"/>
-                    </navigationBar>
-                    <nil name="viewControllers"/>
-                    <connections>
-                        <segue destination="UXA-13-UkO" kind="relationship" relationship="rootViewController" id="IIU-1I-8d4"/>
-                    </connections>
-                </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="IFe-Vj-PT9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1600.0000000000002" y="1995.5357142857142"/>
         </scene>
         <!--Search-->
         <scene sceneID="jEn-JF-3qH">
@@ -300,7 +363,7 @@ for an account</string>
         <!--Cart List View Controller-->
         <scene sceneID="IEF-1V-Q3h">
             <objects>
-                <viewController id="sxa-y6-8Zx" customClass="CartListViewController" customModule="MallNavigator_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sxa-y6-8Zx" customClass="CartListViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="cb0-KN-tQt">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -310,7 +373,7 @@ for an account</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartProductCell" rowHeight="139" id="ozf-NF-7oW" customClass="CartProductTableViewCell" customModule="MallNavigator_User" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cartProductCell" rowHeight="139" id="ozf-NF-7oW" customClass="CartProductTableViewCell" customModule="MallNavigator_Admin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ozf-NF-7oW" id="05j-jZ-z7e">
@@ -412,61 +475,14 @@ for an account</string>
         <!--Search Category View Controller-->
         <scene sceneID="UVq-69-uKM">
             <objects>
-                <viewController id="Thm-iw-21n" customClass="SearchCategoryViewController" customModule="MallNavigator_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Thm-iw-21n" customClass="SearchCategoryViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Y7M-WF-UhN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="AZZ-LT-Ad4">
-                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <rect key="frame" x="0.0" y="140" width="414" height="673"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="categoryCell" rowHeight="196" id="A9l-M6-ro5" customClass="CategoryTableViewCell" customModule="MallNavigator_User" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="44.5" width="414" height="196"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="A9l-M6-ro5" id="2VM-80-mn2">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="196"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kdW-8O-qBf">
-                                                    <rect key="frame" x="20" y="10" width="374" height="176"/>
-                                                    <subviews>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qvu-n3-3BI">
-                                                            <rect key="frame" x="18" y="137" width="42" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Umn-WD-TyD">
-                                                            <rect key="frame" x="312" y="20" width="42" height="21"/>
-                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                            <nil key="textColor"/>
-                                                            <nil key="highlightedColor"/>
-                                                        </label>
-                                                    </subviews>
-                                                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                                    <constraints>
-                                                        <constraint firstItem="Umn-WD-TyD" firstAttribute="top" secondItem="kdW-8O-qBf" secondAttribute="top" constant="20" id="FEK-yn-T7t"/>
-                                                        <constraint firstAttribute="trailing" secondItem="Umn-WD-TyD" secondAttribute="trailing" constant="20" id="KqD-Cw-lkv"/>
-                                                        <constraint firstAttribute="bottom" secondItem="qvu-n3-3BI" secondAttribute="bottom" constant="18" id="iTV-12-f5e"/>
-                                                        <constraint firstItem="qvu-n3-3BI" firstAttribute="leading" secondItem="kdW-8O-qBf" secondAttribute="leading" constant="18" id="zmb-eS-NsW"/>
-                                                    </constraints>
-                                                </view>
-                                            </subviews>
-                                            <constraints>
-                                                <constraint firstItem="kdW-8O-qBf" firstAttribute="top" secondItem="2VM-80-mn2" secondAttribute="top" constant="10" id="D7r-f4-Hw6"/>
-                                                <constraint firstItem="kdW-8O-qBf" firstAttribute="leading" secondItem="2VM-80-mn2" secondAttribute="leading" constant="20" id="KVa-py-JQQ"/>
-                                                <constraint firstAttribute="bottom" secondItem="kdW-8O-qBf" secondAttribute="bottom" constant="10" id="MaM-Ry-rO5"/>
-                                                <constraint firstAttribute="trailing" secondItem="kdW-8O-qBf" secondAttribute="trailing" constant="20" id="cjy-FM-ZhC"/>
-                                            </constraints>
-                                        </tableViewCellContentView>
-                                        <connections>
-                                            <outlet property="categroryNameLabel" destination="qvu-n3-3BI" id="6rJ-Ag-dvt"/>
-                                            <outlet property="cellHolderView" destination="kdW-8O-qBf" id="YAv-s3-U1w"/>
-                                            <outlet property="numberOfShopsLabel" destination="Umn-WD-TyD" id="qkQ-38-fAo"/>
-                                        </connections>
-                                    </tableViewCell>
-                                </prototypes>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KWR-e6-yIM"/>
@@ -491,7 +507,7 @@ for an account</string>
         <!--Shop List-->
         <scene sceneID="GcP-bU-BGX">
             <objects>
-                <viewController restorationIdentifier="shopList" storyboardIdentifier="shopList" id="L8r-Vg-7gd" customClass="UserStoreListViewController" customModule="MallNavigator_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="shopList" storyboardIdentifier="shopList" id="L8r-Vg-7gd" customClass="UserStoreListViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V1h-64-LZQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -500,7 +516,7 @@ for an account</string>
                                 <rect key="frame" x="0.0" y="140" width="414" height="756"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopCell" rowHeight="139" id="zpz-CL-evo" customClass="StoreTableViewCell" customModule="MallNavigator_User" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="shopCell" rowHeight="139" id="zpz-CL-evo" customClass="StoreTableViewCell" customModule="MallNavigator_Admin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zpz-CL-evo" id="hh7-xS-lgB">
@@ -576,7 +592,7 @@ for an account</string>
         <!--User Store View Controller-->
         <scene sceneID="vcj-xB-8Ef">
             <objects>
-                <viewController restorationIdentifier="storeMainVC" storyboardIdentifier="storeMainVC" id="XKx-NK-LfZ" customClass="UserStoreViewController" customModule="MallNavigator_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="storeMainVC" storyboardIdentifier="storeMainVC" id="XKx-NK-LfZ" customClass="UserStoreViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NH1-me-PI1">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -586,7 +602,7 @@ for an account</string>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="139" id="xmK-YM-C8e" customClass="ProductCellTableViewCell" customModule="MallNavigator_User" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="productCell" rowHeight="139" id="xmK-YM-C8e" customClass="ProductCellTableViewCell" customModule="MallNavigator_Admin" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="139"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xmK-YM-C8e" id="4vg-3J-WtS">
@@ -703,7 +719,7 @@ for an account</string>
         <!--Product Main View Controller-->
         <scene sceneID="XaK-ha-CAv">
             <objects>
-                <viewController restorationIdentifier="productMainVC" storyboardIdentifier="productMainVC" id="fz8-dZ-gCN" customClass="ProductMainViewController" customModule="MallNavigator_User" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="productMainVC" storyboardIdentifier="productMainVC" id="fz8-dZ-gCN" customClass="ProductMainViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k6L-0N-ROh">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -811,7 +827,7 @@ for an account</string>
         <!--Profile-->
         <scene sceneID="Fpp-2N-qk6">
             <objects>
-                <tableViewController id="69o-cY-HJH" customClass="UserProfileTableViewController" customModule="MallNavigator_User" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="69o-cY-HJH" customClass="UserProfileTableViewController" customModule="MallNavigator_Admin" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="cbh-Ok-8Id">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -911,8 +927,6 @@ for an account</string>
         <image name="cart" catalog="system" width="128" height="102"/>
         <image name="cart.fill" catalog="system" width="128" height="102"/>
         <image name="heart" catalog="system" width="128" height="109"/>
-        <image name="house" catalog="system" width="128" height="106"/>
-        <image name="house.fill" catalog="system" width="128" height="106"/>
         <image name="magnifyingglass" catalog="system" width="128" height="115"/>
         <image name="person" catalog="system" width="128" height="117"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>

@@ -178,6 +178,12 @@
 		15C90A1D262B7A7B0079D720 /* OfferListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C90A1C262B7A7B0079D720 /* OfferListViewController.swift */; };
 		15C90A21262BAD760079D720 /* OfferDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15C90A20262BAD760079D720 /* OfferDetailViewController.swift */; };
 		15C90A6C2606E6E400362E7D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 15C90A6B2606E6E400362E7D /* GoogleService-Info.plist */; };
+		15E7F88727987B3300B2BAC5 /* CategoryCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F88627987B3300B2BAC5 /* CategoryCellView.xib */; };
+		15E7F88827987B3300B2BAC5 /* CategoryCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F88627987B3300B2BAC5 /* CategoryCellView.xib */; };
+		15E7F88927987B3300B2BAC5 /* CategoryCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 15E7F88627987B3300B2BAC5 /* CategoryCellView.xib */; };
+		15E7F88B279C898F00B2BAC5 /* DashboardEventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F88A279C898E00B2BAC5 /* DashboardEventCollectionViewCell.swift */; };
+		15E7F88C279C898F00B2BAC5 /* DashboardEventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F88A279C898E00B2BAC5 /* DashboardEventCollectionViewCell.swift */; };
+		15E7F88D279C898F00B2BAC5 /* DashboardEventCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15E7F88A279C898E00B2BAC5 /* DashboardEventCollectionViewCell.swift */; };
 		15EA9D5426137F8800184558 /* UITextFieldExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA9D5326137F8800184558 /* UITextFieldExtension.swift */; };
 		15EA9D5E26176FDC00184558 /* EventHolder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15EA9D5D26176FDC00184558 /* EventHolder.swift */; };
 		15F9318C260700D600C783CC /* FirebaseAuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15F9318B260700D600C783CC /* FirebaseAuthManager.swift */; };
@@ -246,6 +252,8 @@
 		15C90A1C262B7A7B0079D720 /* OfferListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferListViewController.swift; sourceTree = "<group>"; };
 		15C90A20262BAD760079D720 /* OfferDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OfferDetailViewController.swift; sourceTree = "<group>"; };
 		15C90A6B2606E6E400362E7D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		15E7F88627987B3300B2BAC5 /* CategoryCellView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CategoryCellView.xib; sourceTree = "<group>"; };
+		15E7F88A279C898E00B2BAC5 /* DashboardEventCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardEventCollectionViewCell.swift; sourceTree = "<group>"; };
 		15EA9D5326137F8800184558 /* UITextFieldExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITextFieldExtension.swift; sourceTree = "<group>"; };
 		15EA9D5D26176FDC00184558 /* EventHolder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventHolder.swift; sourceTree = "<group>"; };
 		15F9318B260700D600C783CC /* FirebaseAuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthManager.swift; sourceTree = "<group>"; };
@@ -410,7 +418,7 @@
 		1582B11E260D3B7D00450CDC /* Table View Cell */ = {
 			isa = PBXGroup;
 			children = (
-				1582B123260D3BEE00450CDC /* CategoryTableViewCell.swift */,
+				15E7F88527987AD500B2BAC5 /* Category Table View Cell */,
 				1582B12C260D83DF00450CDC /* EventTableViewCell.swift */,
 				1532476C2618F0B300B95E5A /* StoreTableViewCell.swift */,
 				1588375E262D0BB200FE2E73 /* ProductCellTableViewCell.swift */,
@@ -593,6 +601,15 @@
 			path = Offer;
 			sourceTree = "<group>";
 		};
+		15E7F88527987AD500B2BAC5 /* Category Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				1582B123260D3BEE00450CDC /* CategoryTableViewCell.swift */,
+				15E7F88627987B3300B2BAC5 /* CategoryCellView.xib */,
+			);
+			path = "Category Table View Cell";
+			sourceTree = "<group>";
+		};
 		15EA9D5626150C0C00184558 /* Event */ = {
 			isa = PBXGroup;
 			children = (
@@ -616,6 +633,7 @@
 			children = (
 				15F931922607C88D00C783CC /* ImageCasrouselCollectionViewCell.swift */,
 				151793ED260947F000A8DB18 /* TestCollectionViewCell.swift */,
+				15E7F88A279C898E00B2BAC5 /* DashboardEventCollectionViewCell.swift */,
 			);
 			path = "Collection View Cell";
 			sourceTree = "<group>";
@@ -743,6 +761,7 @@
 				1563B3452606A92600D0FB24 /* LaunchScreen.storyboard in Resources */,
 				1528C3922762A252000C9046 /* User.storyboard in Resources */,
 				15C90A6C2606E6E400362E7D /* GoogleService-Info.plist in Resources */,
+				15E7F88827987B3300B2BAC5 /* CategoryCellView.xib in Resources */,
 				1563B3422606A92600D0FB24 /* Assets.xcassets in Resources */,
 				1563B3402606A92500D0FB24 /* Main.storyboard in Resources */,
 			);
@@ -756,6 +775,7 @@
 				1528C3932762A252000C9046 /* User.storyboard in Resources */,
 				159D3F20274854F500D0EC58 /* ShopOwner.storyboard in Resources */,
 				1528C3962762A27B000C9046 /* Main.storyboard in Resources */,
+				15E7F88727987B3300B2BAC5 /* CategoryCellView.xib in Resources */,
 				159D3F21274854F500D0EC58 /* GoogleService-Info.plist in Resources */,
 				159D3F22274854F500D0EC58 /* Assets.xcassets in Resources */,
 			);
@@ -769,6 +789,7 @@
 				159D3F66274854FB00D0EC58 /* GoogleService-Info.plist in Resources */,
 				159D3F67274854FB00D0EC58 /* Assets.xcassets in Resources */,
 				1528C3972762A27B000C9046 /* Main.storyboard in Resources */,
+				15E7F88927987B3300B2BAC5 /* CategoryCellView.xib in Resources */,
 				1528C3952762A259000C9046 /* ShopOwner.storyboard in Resources */,
 				159D3F69274854FB00D0EC58 /* User.storyboard in Resources */,
 			);
@@ -965,6 +986,7 @@
 				15A46E402622543D00BED3F3 /* User.swift in Sources */,
 				15F931972607C9A900C783CC /* Offer.swift in Sources */,
 				158E9EE42628F5CE00982116 /* SnapCollectionViewFlowLayout.swift in Sources */,
+				15E7F88C279C898F00B2BAC5 /* DashboardEventCollectionViewCell.swift in Sources */,
 				15C90A1D262B7A7B0079D720 /* OfferListViewController.swift in Sources */,
 				159BC873261F364800EAC53C /* ShopDetailViewController.swift in Sources */,
 				1563B33D2606A92500D0FB24 /* LoginViewController.swift in Sources */,
@@ -1024,6 +1046,7 @@
 				159D3EF3274854F500D0EC58 /* User.swift in Sources */,
 				159D3EF4274854F500D0EC58 /* Offer.swift in Sources */,
 				159D3EF5274854F500D0EC58 /* SnapCollectionViewFlowLayout.swift in Sources */,
+				15E7F88B279C898F00B2BAC5 /* DashboardEventCollectionViewCell.swift in Sources */,
 				159D3EF6274854F500D0EC58 /* OfferListViewController.swift in Sources */,
 				159D3EF7274854F500D0EC58 /* ShopDetailViewController.swift in Sources */,
 				159D3EF8274854F500D0EC58 /* LoginViewController.swift in Sources */,
@@ -1083,6 +1106,7 @@
 				159D3F38274854FB00D0EC58 /* User.swift in Sources */,
 				159D3F39274854FB00D0EC58 /* Offer.swift in Sources */,
 				159D3F3A274854FB00D0EC58 /* SnapCollectionViewFlowLayout.swift in Sources */,
+				15E7F88D279C898F00B2BAC5 /* DashboardEventCollectionViewCell.swift in Sources */,
 				159D3F3B274854FB00D0EC58 /* OfferListViewController.swift in Sources */,
 				159D3F3C274854FB00D0EC58 /* ShopDetailViewController.swift in Sources */,
 				159D3F3D274854FB00D0EC58 /* LoginViewController.swift in Sources */,

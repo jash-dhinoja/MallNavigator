@@ -11,7 +11,7 @@ class EventCategoryViewController: UIViewController {
 
     //MARK:- Properties
     
-    let categoryList = Category.categoryList
+    let categoryList = CategoryList.list
     
     //TableView
     @IBOutlet weak var tableView: UITableView!
@@ -24,6 +24,8 @@ class EventCategoryViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        tableView.register(UINib(nibName: "CategoryCellView", bundle: nil), forCellReuseIdentifier: "categoryCell")
         
         tableView.rowHeight = 200
         tableView.separatorStyle = .none
